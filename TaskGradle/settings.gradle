@@ -1,0 +1,6 @@
+rootProject.name = 'TaskGradle'
+include 'db'
+include 'api'
+findProject(':db:src:main:service')?.name = 'service'
+include 'service'
+
